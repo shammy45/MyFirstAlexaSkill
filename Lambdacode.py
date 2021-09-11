@@ -53,7 +53,7 @@ def get_InquireWeather_response(intent, session):
     reprompt_text = "You are here to check weather, isnt?."
     city_input = intent['slots']['name']['value']
     params = {
-      'access_key': 'fe2f5f23499557ab364f6891dc7184f5',
+      'access_key': 'YOUR OWN KEY HERE',
       'query': city_input
     }
     api_result = requests.get('http://api.weatherstack.com/current', params)
